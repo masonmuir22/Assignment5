@@ -23,103 +23,136 @@ namespace Assignment5.Models
                 context.Books.AddRange(
                     new Books
                     {
+                        BookID = 1,
                         Title = "Les Miserables",
-                        Author = "Victor Hugo",
+                        AuthorFirst = "Victor",
+                        AuthorLast = "Hugo",
                         Publisher = "Signet",
                         ISBN = "978 - 0451419439",
-                        Category = "",
+                        Class = "Fiction",
+                        Category = "Classic",
                         Price = "$9.95"
                     },
 
                     new Books
                     {
+                        BookID = 2,
                         Title = "Team of Rivals",
-                        Author = "Doris Kearns Goodwin",
+                        AuthorFirst = "Doris",
+                        AuthorMiddle = "Kearns",
+                        AuthorLast = "Goodwin",
                         Publisher = "Simon & Schuster",
                         ISBN = "978 - 0743270755",
-                        Category = "Non-Fiction, Biography",
+                        Class = "Non-Fiction",
+                        Category = "Biography",
                         Price = "$14.58"
                     },
 
                     new Books
                     {
+                        BookID = 3,
                         Title = "The Snowball",
-                        Author = "Alice Schroeder",
+                        AuthorFirst = "Alice ",
+                        AuthorLast = "Schroeder",
                         Publisher = "Bantam",
                         ISBN = "978 - 0553384611",
-                        Category = "Non-Fiction, Biography",
+                        Class = "Non-Fiction",
+                        Category = "Biography",
                         Price = "$21.54"
                     },
 
                     new Books
                     {
+                        BookID = 4,
                         Title = "American Ulysses",
-                        Author = "Ronald C. White",
+                        AuthorFirst = "Ronald",
+                        AuthorMiddle = "C.",
+                        AuthorLast = "White",
                         Publisher = "Random House",
                         ISBN = "978 - 0812981254",
-                        Category = "Non - Fiction, Biography",
+                        Class = "Non-Fiction",
+                        Category = "Biography",
                         Price = "$11.61"
                     },
 
                     new Books
                     {
+                        BookID = 5,
                         Title = "Unbroken",
-                        Author = "Laura Hillenbrand",
+                        AuthorFirst = "Laura ",
+                        AuthorLast = "Hillenbrand",
                         Publisher = "Random House",
                         ISBN = "978 - 0812974492",
-                        Category = "Non - Fiction, Historical",
+                        Class = "Non-Fiction",
+                        Category = "Historical",
                         Price = "$13.33"
                     },
 
                     new Books
                     {
+                        BookID = 6,
                         Title = "The Great Train Robbery",
-                        Author = "Michael Crichton",
+                        AuthorFirst = "Michael",
+                        AuthorLast = "Crichton",
                         Publisher = "Vintage",
                         ISBN = "978 - 0804171281",
-                        Category = "Fiction, Historical Fiction",
+                        Class = "Fiction",
+                        Category = "Historical Fiction",
                         Price = "$15.95"
                     },
 
                     new Books
                     {
+                        BookID = 7,
                         Title = "Deep Work",
-                        Author = "Cal Newport",
+                        AuthorFirst = "Cal",
+                        AuthorLast = "Newport",
                         Publisher = "Grand Central Publishing",
                         ISBN = "978 - 1455586691",
-                        Category = "Non - Fiction, Self - Help",
+                        Class = "Non-Fiction",
+                        Category = "Self - Help",
                         Price = "$14.99"
                     },
 
                     new Books
                     {
+                        BookID = 8,
                         Title = "It's Your Ship",
-                        Author = "Michael Abrashoff",
+                        AuthorFirst = "Michael ",
+                        AuthorLast = "Abrashoff",
                         Publisher = "Grand Central Publishing",
                         ISBN = "978 - 1455523023",
-                        Category = "Non - Fiction, Self - Help",
+                        Class = "Non-Fiction",
+                        Category = "Self - Help",
                         Price = "$21.66"
                     },
 
 
                     new Books
                     {
+                        BookID = 9,
                         Title = "The Virgin Way",
-                        Author = "Richard Branson",
+                        AuthorFirst = "Richard",
+                        AuthorLast = "Branson",
                         Publisher = "Portfolio",
                         ISBN = "978 - 1591847984",
-                        Category = "Non - Fiction, Business",
+                        Class = "Non-Fiction",
+                        Category = "Business",
                         Price = "$29.16"
                     },
 
 
                     new Books
                     {
+                        BookID = 10,
                         Title = "Sycamore Row",
-                        Author = "Row John Grisham",
+                        AuthorFirst = "Row",
+                        AuthorMiddle = "John",
+                        AuthorLast = "Grisham",
                         Publisher = "Bantam",
                         ISBN = "978 - 0553393613",
-                        Category = "Fiction, Thrillers",
+                        Class = "Fiction",
+                        Category = "Thrillers",
                         Price = "$15.03"
                     }
 

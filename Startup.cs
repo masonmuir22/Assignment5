@@ -29,7 +29,7 @@ namespace Assignment5
 
             services.AddDbContext<BookDBContext>(options =>
             {
-                options.UseSqlServer(Configuration["ConnectionStrings:BookConnection"]);
+                options.UseSqlServer(Configuration["ConnectionStrings:BookDB"]);
             });
 
             //adding this "trust the process" -Spencer Hilton

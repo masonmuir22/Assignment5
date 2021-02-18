@@ -380,7 +380,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.Targets/1.1.3": {
+      "Microsoft.NETCore.Targets/3.0.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -2151,19 +2151,20 @@
         "version.txt"
       ]
     },
-    "Microsoft.NETCore.Targets/1.1.3": {
-      "sha512": "3Wrmi0kJDzClwAC+iBdUBpEKmEle8FQNsCs77fkiOIw/9oYA07bL1EZNX0kQ2OMN3xpwvl0vAtOCYY3ndDNlhQ==",
+    "Microsoft.NETCore.Targets/3.0.0": {
+      "sha512": "WOwoFoWQ+/njjM0pKbnkKTBo8q3NphEOtu1zMXbqRoWsI07JSXWSycgN3cdM+NlhkXxH4TNEFtI5Pjm94N6DLw==",
       "type": "package",
-      "path": "microsoft.netcore.targets/1.1.3",
+      "path": "microsoft.netcore.targets/3.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.targets.1.1.3.nupkg.sha512",
+        "microsoft.netcore.targets.3.0.0.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
-        "runtime.json"
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.Win32.Registry/4.7.0": {
@@ -5794,7 +5795,8 @@
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.EntityFrameworkCore.Design >= 5.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.3",
-      "Microsoft.EntityFrameworkCore.Tools >= 5.0.3"
+      "Microsoft.EntityFrameworkCore.Tools >= 5.0.3",
+      "Microsoft.NETCore.Targets >= 3.0.0"
     ]
   },
   "packageFolders": {
@@ -5849,6 +5851,11 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[5.0.3, )"
+          },
+          "Microsoft.NETCore.Targets": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.0.0, )"
           }
         },
         "imports": [
