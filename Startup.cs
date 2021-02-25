@@ -29,7 +29,7 @@ namespace Assignment5
 
             services.AddDbContext<BookDBContext>(options =>
             {
-                options.UseSqlServer(Configuration["ConnectionStrings:BookDB"]);
+                options.UseSqlite(Configuration["ConnectionStrings:BookDB"]);
             });
 
             //adding this "trust the process" -Spencer Hilton
@@ -59,8 +59,12 @@ namespace Assignment5
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    "pagination",
+                    "P{page}",
+                    new { Controller = "Home", action = "Index" });
+
+
+                endpoints.MapDefaultControllerRoute();
             });
 
             //This is getting the seed data for the website. We can take this code out later when we have migrated the seed data to our database

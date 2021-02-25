@@ -1,23 +1,31 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-@model IQueryable<Books>
+@model BookListViewModel
 
-<div class="text-center">
+<div class="text-center jumbotron">
     <h1 class="display-4">Books recommended by Spencer Hilton</h1>
     
 </div>
 
 
-@foreach (var x in Model)
+@foreach (var x in Model.Books)
 {
-<div>
+<div class="bg-dark text-info">
     <h2>@x.Title</h2>
     <h3>@x.AuthorFirst @x.AuthorMiddle @x.AuthorLast</h3>
     <p>@x.Publisher</p>
     <p>@x.ISBN</p>
     <p>@x.Class</p>
     <p>@x.Category</p>
-    <p>@x.Price</p>
+    <p class="list-group-item-dark">@x.Price</p>
+    <p>@x.NumPages</p>
 </div>
 }
+
+
+<div  page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true" page-class="btn"
+     page-class-normal="btn-outline-dark"
+     page-class-selected="btn-primary"
+     class="btn-group pull-right m-1"
+     ></div>
