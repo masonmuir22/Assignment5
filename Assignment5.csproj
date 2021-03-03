@@ -21,5 +21,8 @@
   <ItemGroup>
     <Folder Include="Models\View Models\" />
     <Folder Include="Infrastructure\" />
+    <Folder Include="Component\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\NavigationMenu\" />
   </ItemGroup>
 </Project>

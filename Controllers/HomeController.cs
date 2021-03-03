@@ -25,11 +25,12 @@ namespace Assignment5.Controllers
             _repository = repository;
         }
 
-        public IActionResult Index(int page = 1)
+        public IActionResult Index(string category, int page = 1)
         {
             return View(new BookListViewModel
             {
                 Books = _repository.Books
+                .Where(p => category == null || p.Category == category)
                 .OrderBy(p => p.BookID)
                 .Skip((page - 1) * itemsPerPage)
                 .Take(itemsPerPage)
@@ -38,8 +39,10 @@ namespace Assignment5.Controllers
                 {
                     CurrentPage = page,
                     ItemsPerPage = itemsPerPage,
-                    TotalNumItems = _repository.Books.Count()
-                }
+                    TotalNumItems = category == null ? _repository.Books.Count()
+                        : _repository.Books.Where(x => x.Category ==category).Count()
+                },
+                Category = category
             }
                 );
         }

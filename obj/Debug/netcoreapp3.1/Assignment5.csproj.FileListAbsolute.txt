@@ -90,3 +90,5 @@
 /Users/masonmuir/Projects/Assignment5/Assignment5/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.EventLog.dll
 /Users/masonmuir/Projects/Assignment5/Assignment5/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.EventSource.dll
 /Users/masonmuir/Projects/Assignment5/Assignment5/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+/Users/masonmuir/Projects/Assignment5/Assignment5/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/NavigationMenu/Default.cshtml.g.cs
+/Users/masonmuir/Projects/Assignment5/Assignment5/obj/Debug/netcoreapp3.1/Razor/Views/Shared/BookSummary.cshtml.g.cs
