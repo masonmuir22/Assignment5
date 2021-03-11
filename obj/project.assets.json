@@ -1985,7 +1985,7 @@
       "outputPath": "/Users/masonmuir/Projects/Assignment5/Assignment5/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/masonmuir/.config/NuGet/NuGet.Config"
+        "/Users/masonmuir/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

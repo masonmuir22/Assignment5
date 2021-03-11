@@ -54,9 +54,9 @@ namespace Assignment5.Infrastructure
             {
                 TagBuilder tag = new TagBuilder("a");
 
-                PageUrlValues["page"] = i;
+                PageUrlValues["pageNum"] = i;
                 tag.Attributes["href"] = urlHelper.Action(PageAction, PageUrlValues);
-                tag.InnerHtml.Append(i.ToString());
+                //tag.InnerHtml.Append(i.ToString());
 
                 if (PageClassesEnabled)
                 {

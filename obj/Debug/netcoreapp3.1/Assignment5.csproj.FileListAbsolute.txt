@@ -35,7 +35,6 @@
 /Users/masonmuir/Projects/Assignment5/Assignment5/obj/Debug/netcoreapp3.1/Assignment5.TagHelpers.input.cache
 /Users/masonmuir/Projects/Assignment5/Assignment5/obj/Debug/netcoreapp3.1/Assignment5.TagHelpers.output.cache
 /Users/masonmuir/Projects/Assignment5/Assignment5/obj/Debug/netcoreapp3.1/Assignment5.RazorCoreGenerate.cache
-/Users/masonmuir/Projects/Assignment5/Assignment5/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
 /Users/masonmuir/Projects/Assignment5/Assignment5/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
 /Users/masonmuir/Projects/Assignment5/Assignment5/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
 /Users/masonmuir/Projects/Assignment5/Assignment5/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
@@ -92,3 +91,9 @@
 /Users/masonmuir/Projects/Assignment5/Assignment5/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.ConfigurationExtensions.dll
 /Users/masonmuir/Projects/Assignment5/Assignment5/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/NavigationMenu/Default.cshtml.g.cs
 /Users/masonmuir/Projects/Assignment5/Assignment5/obj/Debug/netcoreapp3.1/Razor/Views/Shared/BookSummary.cshtml.g.cs
+/Users/masonmuir/Projects/Assignment5/Assignment5/obj/Debug/netcoreapp3.1/Razor/Pages/Cart.cshtml.g.cs
+/Users/masonmuir/Projects/Assignment5/Assignment5/obj/Debug/netcoreapp3.1/Razor/Pages/Shared/_CartLayout.cshtml.g.cs
+/Users/masonmuir/Projects/Assignment5/Assignment5/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewImports.cshtml.g.cs
+/Users/masonmuir/Projects/Assignment5/Assignment5/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewStart.cshtml.g.cs
+/Users/masonmuir/Projects/Assignment5/Assignment5/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
+/Users/masonmuir/Projects/Assignment5/Assignment5/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/CartSummary/Default.cshtml.g.cs

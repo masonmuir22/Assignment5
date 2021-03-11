@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Assignment5.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http;
 
 namespace Assignment5
 {
@@ -32,6 +33,14 @@ namespace Assignment5
                 options.UseSqlite(Configuration["ConnectionStrings:BookDB"]);
             });
 
+            //add razor pages services
+            services.AddRazorPages();
+
+            services.AddDistributedMemoryCache();
+            services.AddSession();
+            services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
             //adding this "trust the process" -Spencer Hilton
             services.AddScoped<IBookRepository, EFBookRepository>();
         }
@@ -52,6 +61,17 @@ namespace Assignment5
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            //sets up a session for us 
+            app.UseSession();
+
+            //security
+            app.Use(async (context, next) =>
+            {
+                context.Response.Headers.Add("X-Xss-Protection", "1");
+                await next();
+            });
+
+
             app.UseRouting();
 
             app.UseAuthorization();
@@ -61,29 +81,32 @@ namespace Assignment5
                 //endpoint 1
                 endpoints.MapControllerRoute(
                     "catpage",
-                    "{category}/{page}",
+                    "{category}/{pageNum}",
                     new { Controller = "Home", action = "Index" });
 
                 //endpoint2
                 endpoints.MapControllerRoute(
                     "page",
-                    "{page}",
+                    "{pageNum}",
                     new { Controller = "Home", action = "Index" });
 
                 //endpoint3
                 endpoints.MapControllerRoute(
                     "category",
                     "{category}",
-                    new { Controller = "Home", action = "Index", page=1 });
+                    new { Controller = "Home", action = "Index", pageNum=1 });
 
                 //endpoint 4
                 endpoints.MapControllerRoute(
                     "pagination",
-                    "P{page}",
+                    "P{pageNum}",
                     new { Controller = "Home", action = "Index" });
 
 
                 endpoints.MapDefaultControllerRoute();
+
+                //route to razor page endpoints
+                endpoints.MapRazorPages();
             });
 
             //This is getting the seed data for the website. We can take this code out later when we have migrated the seed data to our database

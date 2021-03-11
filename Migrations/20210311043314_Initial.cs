@@ -20,7 +20,7 @@ namespace Assignment5.Migrations
                     ISBN = table.Column<string>(nullable: false),
                     Class = table.Column<string>(nullable: false),
                     Category = table.Column<string>(nullable: false),
-                    Price = table.Column<string>(nullable: false),
+                    Price = table.Column<double>(nullable: false),
                     NumPages = table.Column<int>(nullable: false)
                 },
                 constraints: table =>

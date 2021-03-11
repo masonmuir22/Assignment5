@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Assignment5.Migrations
 {
     [DbContext(typeof(BookDBContext))]
-    [Migration("20210225063341_Initial")]
+    [Migration("20210311043314_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -49,9 +49,8 @@ namespace Assignment5.Migrations
                     b.Property<int>("NumPages")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Price")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.Property<double>("Price")
+                        .HasColumnType("REAL");
 
                     b.Property<string>("Publisher")
                         .IsRequired()
